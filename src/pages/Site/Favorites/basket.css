@@ -1,0 +1,39 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e6f7ff; 
+}
+
+tr:hover td {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+button{
+  width: 50px;
+  height: 30px;
+  border:none;
+  background-color: red;
+  color: aliceblue;
+  border-radius: 3px;
+  &:hover{
+    background-color: rgb(183, 9, 9);
+    cursor: pointer;
+
+  }
+
+}
+ 
