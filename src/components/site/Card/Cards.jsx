@@ -19,7 +19,7 @@ const Cards = () => {
       if(item.id == id){
         isItemExist = true
         
-      }                                       
+      }                                        
     })
     if(!isItemExist){
       setBasketItems([...basketItems,item])

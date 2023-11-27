@@ -13,7 +13,6 @@ function Header() {
 
   <Link to="/">Home</Link>
   <Link to="addproducts">Add Product</Link>
-  <Link to="edit">Edit Product</Link>
   </div>
   </header>
     </div>

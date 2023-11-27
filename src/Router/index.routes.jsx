@@ -43,7 +43,7 @@ const ROOT = [
         element: <AddProducts />,
       },
       {
-        path: "edit",
+        path: "edit/:id",
         element: <Edit />,
       },
       {

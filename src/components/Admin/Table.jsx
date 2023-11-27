@@ -3,7 +3,8 @@ import "./table.css";
 import axios from 'axios';
 import Search from './Search';
 import {Toaster,toast} from 'react-hot-toast';
-
+import { Link } from 'react-router-dom';
+import Edit from '../../pages/Admin/EditProduct/Edit';
 const Table = () => {
   const [table, setTable] = useState([]);
   const [original, setOriginal] = useState([]);
@@ -30,7 +31,7 @@ const Table = () => {
         setLoading(false);
       }) .catch(err => {
         setError(err);
-        setLoading(false);
+        setLoading(false); 
       });
   }, []);
 
@@ -38,9 +39,9 @@ const Table = () => {
     <div>
       <Search table={table} setTable={setTable} original={original} />
       {loading ? (
-     <div class="d-flex justify-content-center">
-     <div class="spinner-border" role="status">
-       <span class="sr-only">Loading...</span>
+     <div className="d-flex justify-content-center">
+     <div className="spinner-border" role="status">
+       <span className="sr-only"></span>
      </div>
    </div>
       ) : (
@@ -68,7 +69,7 @@ const Table = () => {
                   </button>
                 </td>
                 <td>
-                <button className='edit'>Edit</button>
+                <Link to={`edit/${item.id}`}><button className='edit'>Edit</button></Link>
                 </td>
               </tr>
             ))}
